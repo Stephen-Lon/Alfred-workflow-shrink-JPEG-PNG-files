@@ -1,4 +1,4 @@
-# Alfred-workflow-shrink-jpg-png-file-s-
+# Alfred-workflow-shrink-jpg-png-files
 # Introduction
 
 This workflow, which works as a Universal Action both on a *single* selected JPEG or PNG file and on *multiple* selected JPEG or PNG files:
