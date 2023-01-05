@@ -23,3 +23,5 @@ If you use the default backup folder in the User Configuration the backup is to 
 # Usage
 
 Select a single JPEG or PNG file, or multiple JPEG or PNG files, in Finder, use your Universal Actions hotkey and choose `Shrink JPEG/PNG file(s)` to run the workflow.
+
+Version 2.0 now enables you to set the default resizing method (by longest side or by percentage) so that if you use one of those methods regularly it is quicker to dismiss the dialogs simply by pressing <Enter>.
