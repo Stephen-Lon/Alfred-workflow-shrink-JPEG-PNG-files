@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.alfredapp.src.shrinkfile</string>
+	<string>app.alfred.stephenc.shrinkfile</string>
 	<key>category</key>
-	<string>Universal Action</string>
+	<string>Universal Action</string>	
 	<key>connections</key>
 	<dict>
 		<key>033D8CE4-FE50-4C0E-991D-E6BF84768934</key>
@@ -1105,7 +1105,11 @@ If you un-check `Resize by length of longest side` in the User Configuration the
 
 # Credit
 
-The icon is provided by [Edit tools icons created by srip - Flaticon](https://www.flaticon.com/free-icons/edit-tools).</string>
+The icon is provided by [Edit tools icons created by srip - Flaticon](https://www.flaticon.com/free-icons/edit-tools).
+
+---
+
+**Version 2.1** 05/01/2023: changed bundle identifier and added and amended certain notes in workflow.</string>
 	<key>uidata</key>
 	<dict>
 		<key>033D8CE4-FE50-4C0E-991D-E6BF84768934</key>
@@ -1119,6 +1123,8 @@ The icon is provided by [Edit tools icons created by srip - Flaticon](https://ww
 		</dict>
 		<key>09C94FEF-50F0-476F-B386-2E5AC35393BA</key>
 		<dict>
+			<key>note</key>
+			<string>Take default resizing option from User Configuration</string>
 			<key>xpos</key>
 			<real>345</real>
 			<key>ypos</key>
@@ -1233,7 +1239,7 @@ The icon is provided by [Edit tools icons created by srip - Flaticon](https://ww
 		<key>5625A350-649C-41F4-A691-9AE839FFB332</key>
 		<dict>
 			<key>note</key>
-			<string>Choose resize method</string>
+			<string>Choose percentage resize method</string>
 			<key>xpos</key>
 			<real>525</real>
 			<key>ypos</key>
@@ -1260,7 +1266,7 @@ The icon is provided by [Edit tools icons created by srip - Flaticon](https://ww
 		<key>7F213F36-119A-4301-B474-13DBB11D2425</key>
 		<dict>
 			<key>note</key>
-			<string>Choose resize method</string>
+			<string>Choose longest side resize method</string>
 			<key>xpos</key>
 			<real>525</real>
 			<key>ypos</key>
@@ -1363,7 +1369,7 @@ The icon is provided by [Edit tools icons created by srip - Flaticon](https://ww
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<string>/tmp/com.alfredapp.resize.backups</string>
+				<string>/tmp/app.alfred.stephenc.shrinkfile.backups</string>
 				<key>filtermode</key>
 				<integer>1</integer>
 				<key>placeholder</key>
@@ -1443,7 +1449,7 @@ The icon is provided by [Edit tools icons created by srip - Flaticon](https://ww
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2.0</string>
+	<string>2.1</string>
 	<key>webaddress</key>
 	<string></string>
 </dict>
