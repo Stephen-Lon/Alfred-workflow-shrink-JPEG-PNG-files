@@ -21,6 +21,33 @@
 				<false/>
 			</dict>
 		</array>
+		<key>09C94FEF-50F0-476F-B386-2E5AC35393BA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7F213F36-119A-4301-B474-13DBB11D2425</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>A65259CC-0551-40ED-8AC6-A71E5C9DC2CE</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>5625A350-649C-41F4-A691-9AE839FFB332</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>B8B32329-983B-4663-88AE-4CBABB0F0855</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>0B66D076-9572-4AF9-AB7F-E01179B8AC7C</key>
 		<array>
 			<dict>
@@ -203,6 +230,33 @@
 				<false/>
 			</dict>
 		</array>
+		<key>5625A350-649C-41F4-A691-9AE839FFB332</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>941100C6-E219-4D0D-8E7F-AB36F3DC0C93</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>_button2</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>4C4A4D72-05EA-4F4F-9F93-5C69BCC91EF8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>_button1</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>611A2D2D-921F-490D-818C-A074FC9F4E08</key>
 		<array>
 			<dict>
@@ -299,7 +353,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>7F213F36-119A-4301-B474-13DBB11D2425</string>
+				<string>09C94FEF-50F0-476F-B386-2E5AC35393BA</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -369,7 +423,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Shrink JPEG/PNG file(s)</string>
+	<string>Shrink JPEG/PNG files</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -390,6 +444,31 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>button1</key>
+				<string>Resize longest side to {var:longestSide}px</string>
+				<key>button2</key>
+				<string>Resize to {var:percentReduction} per cent of original</string>
+				<key>button3</key>
+				<string>End the workflow</string>
+				<key>description</key>
+				<string>You can resize the file(s):
+
+- to the length of the longest side (you are using the default of {var:longestSide}px); or
+
+- by a percentage (you are using the default of {var:percentReduction} per cent).</string>
+				<key>title</key>
+				<string>Choose the resize method</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.dialog</string>
+			<key>uid</key>
+			<string>7F213F36-119A-4301-B474-13DBB11D2425</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>tasksettings</key>
 				<dict>
 					<key>max_size</key>
@@ -402,27 +481,6 @@
 			<string>alfred.workflow.automation.task</string>
 			<key>uid</key>
 			<string>9EE97B79-7680-4D87-A74B-DA0DACA6DA55</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>delimiter</key>
-				<string>	</string>
-				<key>discardemptyarguments</key>
-				<false/>
-				<key>outputas</key>
-				<integer>1</integer>
-				<key>trimarguments</key>
-				<true/>
-				<key>variableprefix</key>
-				<string>split</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.split</string>
-			<key>uid</key>
-			<string>30084CC1-C3A0-4DD3-B43A-84DE4FD2B704</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -457,6 +515,27 @@
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>95F4F517-9247-4520-A657-C917B5F00D68</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>delimiter</key>
+				<string>	</string>
+				<key>discardemptyarguments</key>
+				<false/>
+				<key>outputas</key>
+				<integer>1</integer>
+				<key>trimarguments</key>
+				<true/>
+				<key>variableprefix</key>
+				<string>split</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.split</string>
+			<key>uid</key>
+			<string>30084CC1-C3A0-4DD3-B43A-84DE4FD2B704</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -524,26 +603,6 @@ Original images are in {var:tempFolder}.  If you have not changed the default in
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>acceptsmulti</key>
-				<integer>1</integer>
-				<key>filetypes</key>
-				<array>
-					<string>public.jpeg</string>
-					<string>public.png</string>
-				</array>
-				<key>name</key>
-				<string>Shrink JPEG/PNG file size</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>19E22D61-E3D0-405B-9131-387715FC0424</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argument</key>
 				<string></string>
 				<key>passthroughargument</key>
@@ -564,25 +623,20 @@ Original images are in {var:tempFolder}.  If you have not changed the default in
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>button1</key>
-				<string>Resize longest side to {var:longestSide}px</string>
-				<key>button2</key>
-				<string>Resize to {var:percentReduction} per cent of original</string>
-				<key>button3</key>
-				<string>End the workflow</string>
-				<key>description</key>
-				<string>You can resize the file(s):
-
-- to the length of the longest side (you are using the default of {var:longestSide}px); or
-
-- by a percentage (you are using the default of {var:percentReduction} per cent).</string>
-				<key>title</key>
-				<string>Choose the resize method</string>
+				<key>acceptsmulti</key>
+				<integer>1</integer>
+				<key>filetypes</key>
+				<array>
+					<string>public.jpeg</string>
+					<string>public.png</string>
+				</array>
+				<key>name</key>
+				<string>Shrink JPEG/PNG file size</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.dialog</string>
+			<string>alfred.workflow.trigger.action</string>
 			<key>uid</key>
-			<string>7F213F36-119A-4301-B474-13DBB11D2425</string>
+			<string>19E22D61-E3D0-405B-9131-387715FC0424</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -624,26 +678,6 @@ Original images are in {var:tempFolder}.  If you have not changed the default in
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>theInput</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>A864F377-364B-4DB2-80AD-9B22CC623B5F</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>conditions</key>
 				<array>
 					<dict>
@@ -670,6 +704,52 @@ Original images are in {var:tempFolder}.  If you have not changed the default in
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>2D58CCB9-FBC4-4C19-9C51-28947D37FFFD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:defaultResizeIsByLength}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>5</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string>Default to length</string>
+						<key>uid</key>
+						<string>A65259CC-0551-40ED-8AC6-A71E5C9DC2CE</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:defaultResizeIsByLength}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>6</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string>Default to percent</string>
+						<key>uid</key>
+						<string>B8B32329-983B-4663-88AE-4CBABB0F0855</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>09C94FEF-50F0-476F-B386-2E5AC35393BA</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -716,6 +796,26 @@ Original images are in {var:tempFolder}.  If you have not changed the default in
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>50EC03E2-1E1F-4DEC-8ED9-4623DE35C23C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>theInput</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>A864F377-364B-4DB2-80AD-9B22CC623B5F</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -820,6 +920,31 @@ Original images are in {var:tempFolder}.  If you have not changed the default in
 			<string>alfred.workflow.utility.split</string>
 			<key>uid</key>
 			<string>2F9B0DF7-8794-411C-9B00-EC5D62672D76</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>button1</key>
+				<string>Resize to {var:percentReduction} per cent of original</string>
+				<key>button2</key>
+				<string>Resize longest side to {var:longestSide}px</string>
+				<key>button3</key>
+				<string>End the workflow</string>
+				<key>description</key>
+				<string>You can resize the file(s):
+
+- by a percentage (you are using the default of {var:percentReduction} per cent); or
+
+- to the length of the longest side (you are using the default of {var:longestSide}px).</string>
+				<key>title</key>
+				<string>Choose the resize method</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.dialog</string>
+			<key>uid</key>
+			<string>5625A350-649C-41F4-A691-9AE839FFB332</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -968,6 +1093,16 @@ If you use the default backup folder in the User Configuration the backup is to 
 
 Select a single JPEG or PNG file, or multiple JPEG or PNG files, in Finder, use your Universal Actions hotkey and choose `Shrink JPEG/PNG file(s)` to run the workflow.
 
+If you regularly resize by length of the longest side *or*, as an alternative, by percentage you can now set the default method in the User Configuration. The result will enable you simply to dismiss each dialog by pressing &lt;Return&gt;. The first dialog looks like this in the default configuration:
+
+![Shrink size of JPEG/PNG files](Images/Screenshot default length.png)
+
+If you un-check `Resize by length of longest side` in the User Configuration the first dialog looks like this:
+
+![Shrink size of JPEG/PNG files](Images/Screenshot default percent.png)
+
+*Don't forget to save any change you make to the User Configuration*.
+
 # Credit
 
 The icon is provided by [Edit tools icons created by srip - Flaticon](https://www.flaticon.com/free-icons/edit-tools).</string>
@@ -978,27 +1113,34 @@ The icon is provided by [Edit tools icons created by srip - Flaticon](https://ww
 			<key>note</key>
 			<string>Pass on the file variable</string>
 			<key>xpos</key>
-			<real>2040</real>
+			<real>2345</real>
 			<key>ypos</key>
-			<real>200</real>
+			<real>185</real>
+		</dict>
+		<key>09C94FEF-50F0-476F-B386-2E5AC35393BA</key>
+		<dict>
+			<key>xpos</key>
+			<real>345</real>
+			<key>ypos</key>
+			<real>95</real>
 		</dict>
 		<key>0B66D076-9572-4AF9-AB7F-E01179B8AC7C</key>
 		<dict>
 			<key>note</key>
 			<string>Resize to default percentage set in User Configuration</string>
 			<key>xpos</key>
-			<real>2325</real>
+			<real>2630</real>
 			<key>ypos</key>
-			<real>220</real>
+			<real>205</real>
 		</dict>
 		<key>119D041F-BCA4-4300-9F73-9891C9B300D2</key>
 		<dict>
 			<key>note</key>
 			<string>Split files if more than one</string>
 			<key>xpos</key>
-			<real>1625</real>
+			<real>1930</real>
 			<key>ypos</key>
-			<real>60</real>
+			<real>45</real>
 		</dict>
 		<key>19E22D61-E3D0-405B-9131-387715FC0424</key>
 		<dict>
@@ -1012,144 +1154,153 @@ The icon is provided by [Edit tools icons created by srip - Flaticon](https://ww
 		<key>2D58CCB9-FBC4-4C19-9C51-28947D37FFFD</key>
 		<dict>
 			<key>xpos</key>
-			<real>1085</real>
+			<real>1390</real>
 			<key>ypos</key>
-			<real>110</real>
+			<real>95</real>
 		</dict>
 		<key>2F9B0DF7-8794-411C-9B00-EC5D62672D76</key>
 		<dict>
 			<key>note</key>
 			<string>Split files if more than one</string>
 			<key>xpos</key>
-			<real>1505</real>
+			<real>1810</real>
 			<key>ypos</key>
-			<real>195</real>
+			<real>180</real>
 		</dict>
 		<key>30084CC1-C3A0-4DD3-B43A-84DE4FD2B704</key>
 		<dict>
 			<key>note</key>
 			<string>Split if more than one</string>
 			<key>xpos</key>
-			<real>2200</real>
+			<real>2505</real>
 			<key>ypos</key>
-			<real>60</real>
+			<real>45</real>
 		</dict>
 		<key>359448F0-527B-4A56-89DA-24451C73D947</key>
 		<dict>
 			<key>note</key>
 			<string>Create the temp folder</string>
 			<key>xpos</key>
-			<real>1305</real>
+			<real>1610</real>
 			<key>ypos</key>
-			<real>30</real>
+			<real>15</real>
 		</dict>
 		<key>4C4A4D72-05EA-4F4F-9F93-5C69BCC91EF8</key>
 		<dict>
 			<key>note</key>
 			<string>Set variable for percent resize to true</string>
 			<key>xpos</key>
-			<real>530</real>
+			<real>835</real>
 			<key>ypos</key>
-			<real>190</real>
+			<real>175</real>
 		</dict>
 		<key>4DB39C24-C16B-4B49-AE9A-4BBBB42197C0</key>
 		<dict>
 			<key>note</key>
 			<string>Pass on temp folder variable</string>
 			<key>xpos</key>
-			<real>830</real>
+			<real>1135</real>
 			<key>ypos</key>
-			<real>120</real>
+			<real>105</real>
 		</dict>
 		<key>5067BF5D-3D08-407F-A2B2-3E887BFE7FCD</key>
 		<dict>
 			<key>note</key>
 			<string>We are OK so pass on the file variable</string>
 			<key>xpos</key>
-			<real>1330</real>
+			<real>1635</real>
 			<key>ypos</key>
-			<real>195</real>
+			<real>180</real>
 		</dict>
 		<key>50EC03E2-1E1F-4DEC-8ED9-4623DE35C23C</key>
 		<dict>
 			<key>note</key>
 			<string>Test which resize variable is true</string>
 			<key>xpos</key>
-			<real>1900</real>
+			<real>2205</real>
 			<key>ypos</key>
-			<real>115</real>
+			<real>100</real>
 		</dict>
 		<key>51821C1F-4CBC-4C2A-A165-1DF9ADE1135E</key>
 		<dict>
 			<key>note</key>
 			<string>Pass on tempFolder variable</string>
 			<key>xpos</key>
-			<real>1200</real>
+			<real>1505</real>
 			<key>ypos</key>
-			<real>60</real>
+			<real>45</real>
+		</dict>
+		<key>5625A350-649C-41F4-A691-9AE839FFB332</key>
+		<dict>
+			<key>note</key>
+			<string>Choose resize method</string>
+			<key>xpos</key>
+			<real>525</real>
+			<key>ypos</key>
+			<real>180</real>
 		</dict>
 		<key>611A2D2D-921F-490D-818C-A074FC9F4E08</key>
 		<dict>
 			<key>note</key>
 			<string>Copy original file(s) to the default temp. folder set in User Configuration</string>
 			<key>xpos</key>
-			<real>1740</real>
+			<real>2045</real>
 			<key>ypos</key>
-			<real>95</real>
+			<real>80</real>
 		</dict>
 		<key>6A99DF2B-8419-4D8F-89F0-793F9993DB3C</key>
 		<dict>
 			<key>note</key>
 			<string>Error message</string>
 			<key>xpos</key>
-			<real>780</real>
+			<real>1085</real>
 			<key>ypos</key>
-			<real>270</real>
+			<real>255</real>
 		</dict>
 		<key>7F213F36-119A-4301-B474-13DBB11D2425</key>
 		<dict>
 			<key>note</key>
 			<string>Choose resize method</string>
 			<key>xpos</key>
-			<real>340</real>
+			<real>525</real>
 			<key>ypos</key>
-			<real>80</real>
+			<real>15</real>
 		</dict>
 		<key>923AED3F-5E6D-4466-8788-F43242D40D35</key>
 		<dict>
 			<key>note</key>
 			<string>Pass on the file variable</string>
 			<key>xpos</key>
-			<real>1500</real>
+			<real>1805</real>
 			<key>ypos</key>
-			<real>60</real>
+			<real>45</real>
 		</dict>
 		<key>941100C6-E219-4D0D-8E7F-AB36F3DC0C93</key>
 		<dict>
 			<key>note</key>
 			<string>Set variable for side resize to true</string>
 			<key>xpos</key>
-			<real>530</real>
+			<real>835</real>
 			<key>ypos</key>
-			<real>75</real>
+			<real>60</real>
 		</dict>
 		<key>95F4F517-9247-4520-A657-C917B5F00D68</key>
 		<dict>
 			<key>note</key>
 			<string>Pass on the file variable</string>
 			<key>xpos</key>
-			<real>2040</real>
+			<real>2345</real>
 			<key>ypos</key>
-			<real>60</real>
+			<real>45</real>
 		</dict>
 		<key>9EE97B79-7680-4D87-A74B-DA0DACA6DA55</key>
 		<dict>
 			<key>note</key>
 			<string>Resize longest side of image to default length set in User Configuration</string>
 			<key>xpos</key>
-			<real>2320</real>
+			<real>2625</real>
 			<key>ypos</key>
-			<real>30</real>
+			<real>15</real>
 		</dict>
 		<key>A864F377-364B-4DB2-80AD-9B22CC623B5F</key>
 		<dict>
@@ -1165,45 +1316,45 @@ The icon is provided by [Edit tools icons created by srip - Flaticon](https://ww
 			<key>note</key>
 			<string>Final comfirmation of what has been done</string>
 			<key>xpos</key>
-			<real>2535</real>
+			<real>2840</real>
 			<key>ypos</key>
-			<real>250</real>
+			<real>235</real>
 		</dict>
 		<key>BF102E3C-4B52-4CAF-A9BC-D79AFB7D35F3</key>
 		<dict>
 			<key>note</key>
 			<string>Trap error if default % reduction is &gt;99</string>
 			<key>xpos</key>
-			<real>652</real>
+			<real>957</real>
 			<key>ypos</key>
-			<real>180</real>
+			<real>165</real>
 		</dict>
 		<key>C6AA329E-C486-4B20-82C0-5DDF0433A0EE</key>
 		<dict>
 			<key>note</key>
 			<string>Check that the temp folder (see User Configuration) exists</string>
 			<key>xpos</key>
-			<real>925</real>
+			<real>1230</real>
 			<key>ypos</key>
-			<real>90</real>
+			<real>75</real>
 		</dict>
 		<key>C7F35BA5-C2E0-4927-97D7-5C5DC37C87B6</key>
 		<dict>
 			<key>note</key>
 			<string>Final comfirmation of what has been done</string>
 			<key>xpos</key>
-			<real>2535</real>
+			<real>2840</real>
 			<key>ypos</key>
-			<real>60</real>
+			<real>45</real>
 		</dict>
 		<key>D906F476-9E74-47E1-BA7D-7623D68CF0AA</key>
 		<dict>
 			<key>note</key>
 			<string>Split if more than one</string>
 			<key>xpos</key>
-			<real>2200</real>
+			<real>2505</real>
 			<key>ypos</key>
-			<real>200</real>
+			<real>185</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -1271,11 +1422,28 @@ The icon is provided by [Edit tools icons created by srip - Flaticon](https://ww
 			<key>variable</key>
 			<string>percentReduction</string>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<true/>
+				<key>required</key>
+				<false/>
+				<key>text</key>
+				<string>Resize by length of longest side</string>
+			</dict>
+			<key>description</key>
+			<string>If the chckobox is checked the default resizing method will be by length. Otherwise the default resizing method will be by percentage.</string>
+			<key>label</key>
+			<string>Default resizing method</string>
+			<key>type</key>
+			<string>checkbox</string>
+			<key>variable</key>
+			<string>defaultResizeIsByLength</string>
+		</dict>
 	</array>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
-	<string>1.0</string>
+	<string>2.0</string>
 	<key>webaddress</key>
 	<string></string>
 </dict>
